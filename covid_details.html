@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Covid'19 Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="style_corona.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <!-- NAVIGATION -->
+    <nav>
+        <div id="logo">
+            <img src="logo.png" alt="Health Highway">
+        </div>
+
+        <div id="right">
+            <a href="main.php"><button>Back</button></a>
+        </div>
+    </nav>
+    <div class="bgback">
+		<div class="blackbox">
+			<h1>Covid'19 Informatics Portal</h1>
+    				<div class="covid_div">
+      				<!-- <iframe src="https://maps.mapmyindia.com/corona"></iframe> -->
+      				<!-- <iframe src="https://maps.mapmyindia.com/corona?lat=19.0760&lng=72.8777&zoom=10"></iframe> -->
+
+      				<iframe id="iframe" src="https://maps.mapmyindia.com/corona"></iframe>
+
+   				</div>
+		</div>
+    </div>
+    <script src="script_corona.js"></script>
+  </body>
+</html>

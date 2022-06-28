@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Pregnancy Informatics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<style>
+.bgback{
+	 width: 100%;
+	 height: 90%;
+	 left: 0px;
+	 top: 10%;
+	 background-image: url(hhh.jpg);
+       position: absolute;
+   	 background-position: center;
+   	 background-size: cover;
+}
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+}
+</style>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div id="logo">
+            <img src="logo.png" alt="Health Highway">
+        </div>
+
+        <div id="right">
+            <a href="main.php"><button>Back</button></a>
+        </div>
+    </nav>
+    <div class="bgback">
+    <!-- FORM -->
+    <form action="pregnancy_details.php" method="POST">
+      <h1 color="white">Pregnancy Do's and Don'ts</h1>
+	<center>
+	<h2>Select Age Range</h2><br>
+	<label class="container">10-15
+  	<input type="radio" name="age" value="Kids">
+  	<span class="checkmark"></span>
+	</label>
+	<label class="container">15-25
+  	<input type="radio" name="age" value="Adults">
+  	<span class="checkmark"></span>
+	</label>
+	<label class="container">25-40
+  	<input type="radio" checked="checked" name="age" value="Adults">
+  	<span class="checkmark"></span>
+	</label>
+	<label class="container">40-50
+  	<input type="radio" name="age" value="Adults">
+  	<span class="checkmark"></span>
+	</label>
+	<br>
+	<h2>Select Trimester</h2><br>
+	<label class="container">First *
+  	<input type="radio" checked="checked" name="trimester" value="First Trimester">
+  	<span class="checkmark"></span>
+	</label>
+	<label class="container">Second *
+  	<input type="radio" name="trimester" value="Second Trimester">
+  	<span class="checkmark"></span>
+	</label>	
+	<label class="container">Third *
+  	<input type="radio" name="trimester" value="Third Trimester">
+  	<span class="checkmark"></span>
+	</label>
+      
+	  <div class="input-submit">
+            <input type="submit" value="Next" name="symptoms">
+        </div>
+	<font color="white"><b>
+		* First Trimester (From Week 1 to Week 12)<br>
+		* Second Trimester (From Week 13 to Week 26)<br>
+		* Third Trimester (From Week 27 till End of Pregnancy)
+	</b></font>
+	</center>
+    </form>
+    </div>
+</body>
+
+</html>
